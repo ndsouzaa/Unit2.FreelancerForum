@@ -1,3 +1,17 @@
+
+
+/*
+I want to show 3 of the freelancers on the list
+ */
+
+let freelanceModel = {
+  quantity: 8, 
+  name: 'Alice',
+  price: 30, 
+  occupation: 'Teacher',
+}
+
+
 const freelancers = [
   { name: 'Alice', occupation: 'Writer', price: 30},
   { name: 'Bob', occupation: 'Teacher', price: 50},
@@ -8,3 +22,9 @@ const freelancers = [
   { name: 'Anna', occupation: 'Writer', price: 85},
   { name: 'Jordan', occupation: 'Writer', price: 45},
 ]
+
+const addFreelancer = setInterval(freelancers, 10000);
+
+function renderFreelancer() {
+  let forum = document.getElementById('free-lancers')
+}
