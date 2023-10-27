@@ -27,4 +27,19 @@ const addFreelancer = setInterval(freelancers, 10000);
 
 function renderFreelancer() {
   let forum = document.getElementById('free-lancers')
+  for (let i = 0; i < freelancers.length; i++){
+    let currentFreelancer = freelancers[i]
+    
+    let freelancerDiv = document.createElement('div')
+    freelancerDiv.className = 'freelancers'
+
+    freelancerDiv.innerHTML = 
+                  ` <h3> Name: ${currentFreelancer.name}</h3>
+                   <h3> Occupation: ${currentFreelancer.occupation}</h3>
+                   <h3> Price: ${currentFreelancer.price}</h3>`
+    forum.appendChild(freelancerDiv)
+                                     
+  }
 }
+
+renderFreelancer()
